@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>8B2DB3B8-964E-449B-AE78-41895FDF9EEA</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C470E949AF3056304C0E54F4955B14F0123F8620</key>
+		<string>https://github.com/JoshuaSullivan/ColorCubeHelper.git</string>
+	</dict>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C470E949AF3056304C0E54F4955B14F0123F8620</key>
+		<string>colorCubeHelper/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/JoshuaSullivan/ColorCubeHelper.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C470E949AF3056304C0E54F4955B14F0123F8620</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C470E949AF3056304C0E54F4955B14F0123F8620</string>
+			<key>IDESourceControlWCCName</key>
+			<string>colorCubeHelper</string>
+		</dict>
+	</array>
+</dict>
+</plist>
