@@ -8,27 +8,31 @@
 
 @implementation CCHReferenceImageCreator
 
-// 4, 16, 64, 256
-
 + (NSImage *)createReferenceImageWithCubeSize:(size_t)cubeSize
 {
     size_t gridSize = (size_t)sqrt(cubeSize);
     size_t imageDimension = cubeSize * gridSize;
-    size_t memSize = cubeSize * cubeSize * cubeSize * 4 * sizeof(uint8_t);
+    size_t componentSize = sizeof(uint8_t);
+    size_t memSize = cubeSize * cubeSize * cubeSize * 4 * componentSize;
     uint8_t *bytes = malloc(memSize);
-    float colorStep = 255.0f / (cubeSize - 1);
+    float colorStep = 255.0f / (float)(cubeSize - 1);
     size_t offset = 0;
+    uint8_t r, g, b;
     for (size_t j = 0; j < imageDimension; j++) {
         for (size_t i = 0; i < imageDimension; i++) {
-            bytes[offset] = (uint8_t)roundf((i % cubeSize) * colorStep);
-            bytes[offset + 1] = (uint8_t)roundf((j % cubeSize) * colorStep);
-            bytes[offset + 2] = (uint8_t)roundf((i / cubeSize + (j / cubeSize) * gridSize) * colorStep);
+            r = (uint8_t)roundf((i % cubeSize) * colorStep);
+            g = (uint8_t)roundf((j % cubeSize) * colorStep);
+            b = (uint8_t)roundf((i / cubeSize + (j / cubeSize) * gridSize) * colorStep);
+            bytes[offset + 0] = r;
+            bytes[offset + 1] = g;
+            bytes[offset + 2] = b;
             bytes[offset + 3] = 255U;
             offset += 4;
         }
     }
+
     CGDataProviderRef dataProvider = CGDataProviderCreateWithData(NULL, bytes, memSize, NULL);
-    size_t bitsPerComponent = 8;
+    size_t bitsPerComponent = componentSize * 8;
     size_t bitsPerPixel = 32;
     size_t bytesPerRow = imageDimension * 4;
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

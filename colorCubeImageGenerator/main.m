@@ -31,7 +31,7 @@ int main(int argc, const char * argv[])
                                                        hints:nil];
             NSBitmapImageRep *newRep = [[NSBitmapImageRep alloc] initWithCGImage:cgRef];
             [newRep setSize:[image size]];   // if you want the same resolution
-            NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:nil];
+            NSData *pngData = [newRep representationUsingType:NSPNGFileType properties:@{NSImageInterlaced : @0}];
             [pngData writeToFile:fileName atomically:YES];
             CFTimeInterval endTime = CACurrentMediaTime();
             NSLog(@"Image creation took %0.2fms.", (endTime - startTime) * 1000.0);

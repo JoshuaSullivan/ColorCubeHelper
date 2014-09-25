@@ -44,7 +44,7 @@ static NSString * const kInvalidAppModeError = @"ERROR: You must specify an app 
         sizeNum = @16;
     } else {
         sizeNum = @([sizeString integerValue]);
-        NSArray *validSizes = @[@4, @16, @64, @256];
+        NSArray *validSizes = @[@16, @64, @256];
         if ([validSizes indexOfObject:sizeNum] == NSNotFound) {
             NSLog(@"ERROR: The -size parameter only accepts the following values: %@", [validSizes componentsJoinedByString:@", "]);
             return CCHParseArgumentResultFailed;
@@ -61,7 +61,7 @@ static NSString * const kInvalidAppModeError = @"ERROR: You must specify an app 
     NSLog(@" ");
     NSLog(@"colorCubeImageGenerator [-size S]");
     NSLog(@" ");
-    NSLog(@"\t-size S\t\tSpecify the color cube dimension. Valid values for S are: 4, 16, 64, and 256.");
+    NSLog(@"\t-size S\t\tSpecify the color cube dimension. Valid values for S are: 16, 64, and 256.");
     NSLog(@"\t\t\t\tIf omitted, a value of 16 will be used by default.");
 }
 
