@@ -11,7 +11,6 @@
 		4BA904511992D5D7B6C566AA /* colorCubeHelper.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4BA90C4AEDD60182D437AFF6 /* colorCubeHelper.1 */; };
 		4BA90C2B4F23BCFCD8534490 /* CCHReferenceImageCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA90EF19F62BA9F73D00DC3 /* CCHReferenceImageCreator.m */; };
 		4BA90C7D45DC14B54D79AE40 /* CCHArgumentHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA904930A2E4481B274A206 /* CCHArgumentHelper.m */; };
-		4BA90E89755C35B7FA80A97E /* CCHCubeDataCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA9041A763564A5F6129B07 /* CCHCubeDataCreator.m */; };
 		4BA90E8DCE9934F20ADBED6C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BA904B38B099D360121B6C5 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -30,16 +29,14 @@
 
 /* Begin PBXFileReference section */
 		4BA9028BA7661231DB73D5D0 /* CCHArgumentHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHArgumentHelper.h; sourceTree = "<group>"; };
-		4BA9041A763564A5F6129B07 /* CCHCubeDataCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHCubeDataCreator.m; sourceTree = "<group>"; };
 		4BA904930A2E4481B274A206 /* CCHArgumentHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHArgumentHelper.m; sourceTree = "<group>"; };
 		4BA904B38B099D360121B6C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4BA9056A61DE6D76F01429B5 /* CCHReferenceImageCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHReferenceImageCreator.h; sourceTree = "<group>"; };
-		4BA9077A6407E650526EA1F5 /* colorCubeHelper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "colorCubeHelper-Prefix.pch"; sourceTree = "<group>"; };
-		4BA90AE785BD79D3DD4ED300 /* colorCubeHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = colorCubeHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BA9077A6407E650526EA1F5 /* colorCubeImageGenerator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "colorCubeImageGenerator-Prefix.pch"; sourceTree = "<group>"; };
+		4BA90AE785BD79D3DD4ED300 /* colorCubeImageGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = colorCubeImageGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BA90BA6379C4EAF1ABFBBFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4BA90C4AEDD60182D437AFF6 /* colorCubeHelper.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = colorCubeHelper.1; sourceTree = "<group>"; };
 		4BA90EF19F62BA9F73D00DC3 /* CCHReferenceImageCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHReferenceImageCreator.m; sourceTree = "<group>"; };
-		4BA90FAF925B6C9057526337 /* CCHCubeDataCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHCubeDataCreator.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +54,7 @@
 		4BA901E0317F3B07ACD81192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4BA90AE785BD79D3DD4ED300 /* colorCubeHelper */,
+				4BA90AE785BD79D3DD4ED300 /* colorCubeImageGenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,7 +62,7 @@
 		4BA9040A73EC00411740BF9D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				4BA9077A6407E650526EA1F5 /* colorCubeHelper-Prefix.pch */,
+				4BA9077A6407E650526EA1F5 /* colorCubeImageGenerator-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -77,8 +74,6 @@
 				4BA904930A2E4481B274A206 /* CCHArgumentHelper.m */,
 				4BA90EF19F62BA9F73D00DC3 /* CCHReferenceImageCreator.m */,
 				4BA9056A61DE6D76F01429B5 /* CCHReferenceImageCreator.h */,
-				4BA9041A763564A5F6129B07 /* CCHCubeDataCreator.m */,
-				4BA90FAF925B6C9057526337 /* CCHCubeDataCreator.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -88,11 +83,11 @@
 			children = (
 				4BA901E0317F3B07ACD81192 /* Products */,
 				4BA908E8C572C4BD4B8CFA99 /* Frameworks */,
-				4BA9081831A3564529DBD19F /* colorCubeHelper */,
+				4BA9081831A3564529DBD19F /* colorCubeImageGenerator */,
 			);
 			sourceTree = "<group>";
 		};
-		4BA9081831A3564529DBD19F /* colorCubeHelper */ = {
+		4BA9081831A3564529DBD19F /* colorCubeImageGenerator */ = {
 			isa = PBXGroup;
 			children = (
 				4BA904B38B099D360121B6C5 /* main.m */,
@@ -100,7 +95,7 @@
 				4BA90C4AEDD60182D437AFF6 /* colorCubeHelper.1 */,
 				4BA9069F4FBD101FFF33F706 /* Classes */,
 			);
-			path = colorCubeHelper;
+			path = colorCubeImageGenerator;
 			sourceTree = "<group>";
 		};
 		4BA908E8C572C4BD4B8CFA99 /* Frameworks */ = {
@@ -114,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4BA90149F83E162BE4AD2987 /* colorCubeHelper */ = {
+		4BA90149F83E162BE4AD2987 /* colorCubeImageGenerator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4BA90FD0F4F1B8DC28706853 /* Build configuration list for PBXNativeTarget "colorCubeHelper" */;
+			buildConfigurationList = 4BA90FD0F4F1B8DC28706853 /* Build configuration list for PBXNativeTarget "colorCubeImageGenerator" */;
 			buildPhases = (
 				4BA907AFE970607E3A5F6122 /* Sources */,
 				4BA90768F789DC4633016877 /* Frameworks */,
@@ -126,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = colorCubeHelper;
+			name = colorCubeImageGenerator;
 			productName = colorCubeHelper;
-			productReference = 4BA90AE785BD79D3DD4ED300 /* colorCubeHelper */;
+			productReference = 4BA90AE785BD79D3DD4ED300 /* colorCubeImageGenerator */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -140,7 +135,7 @@
 				CLASSPREFIX = CCH;
 				ORGANIZATIONNAME = "The Nerdery";
 			};
-			buildConfigurationList = 4BA90793A3EACFFD7C5B2152 /* Build configuration list for PBXProject "colorCubeHelper" */;
+			buildConfigurationList = 4BA90793A3EACFFD7C5B2152 /* Build configuration list for PBXProject "colorCubeImageGenerator" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -152,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4BA90149F83E162BE4AD2987 /* colorCubeHelper */,
+				4BA90149F83E162BE4AD2987 /* colorCubeImageGenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -165,7 +160,6 @@
 				4BA90E8DCE9934F20ADBED6C /* main.m in Sources */,
 				4BA90C7D45DC14B54D79AE40 /* CCHArgumentHelper.m in Sources */,
 				4BA90C2B4F23BCFCD8534490 /* CCHReferenceImageCreator.m in Sources */,
-				4BA90E89755C35B7FA80A97E /* CCHCubeDataCreator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,7 +208,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "colorCubeHelper/colorCubeHelper-Prefix.pch";
+				GCC_PREFIX_HEADER = "colorCubeImageGenerator/colorCubeImageGenerator-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -255,7 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "colorCubeHelper/colorCubeHelper-Prefix.pch";
+				GCC_PREFIX_HEADER = "colorCubeImageGenerator/colorCubeImageGenerator-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -263,7 +257,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4BA90793A3EACFFD7C5B2152 /* Build configuration list for PBXProject "colorCubeHelper" */ = {
+		4BA90793A3EACFFD7C5B2152 /* Build configuration list for PBXProject "colorCubeImageGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BA90382CBEF41015B1611A3 /* Debug */,
@@ -272,7 +266,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4BA90FD0F4F1B8DC28706853 /* Build configuration list for PBXNativeTarget "colorCubeHelper" */ = {
+		4BA90FD0F4F1B8DC28706853 /* Build configuration list for PBXNativeTarget "colorCubeImageGenerator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4BA9060E7A23CE673FBD79BA /* Debug */,

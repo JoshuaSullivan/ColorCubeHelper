@@ -5,11 +5,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSInteger, CCHAppMode) {
-    CCHAppModeCreateImage,
-    CCHAppModeGenerateData
-};
-
 typedef NS_ENUM(NSInteger, CCHParseArgumentResult) {
     CCHParseArgumentResultFailed = 0,
     CCHParseArgumentResultSuccessAndContinue,
@@ -18,10 +13,7 @@ typedef NS_ENUM(NSInteger, CCHParseArgumentResult) {
 
 @interface CCHArgumentHelper : NSObject
 
-@property (readonly, nonatomic) CCHAppMode appMode;
 @property (readonly, nonatomic) size_t cubeSize;
-@property (readonly, nonatomic) NSImage *inputImage;
-@property (readonly, nonatomic) NSString *dataName;
 
 - (CCHParseArgumentResult)processArguments;
 
